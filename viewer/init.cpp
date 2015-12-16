@@ -6,7 +6,7 @@
 #include "disp.h"
 #include "files.h"
 #include "init.h"
-;
+
 using namespace std;
 using namespace sf;
 

@@ -32,8 +32,7 @@ float checkExtremeCenter(float center, float app_size, float img_size, float sca
 float getExtremeCenter(float img_center, float app_size, float img_size, float scale) {
 	if (img_size * scale > app_size)
 		return checkExtremeCenter(img_center, app_size, img_size, scale);
-	else
-		return scale * img_size / 2;
+	return scale * img_size / 2;
 }
 
 int drawImage(Texture &texture, RenderWindow& app, bool is_not_scale, float &scale, Vector2i move, Vector2f &img_center) {

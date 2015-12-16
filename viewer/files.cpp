@@ -25,7 +25,6 @@ int getFilesList(string mask, vector <string>  &files)
 
 void getFormFilesList(Files &files) {
 	for (int i = 0; i < files.formats.size(); ++i) {
-		char dir_temp[] = "";
 		string mask = files.dir_name;
 		getFilesList(mask.append("*.").append(files.formats[i]), files.list);
 	}
